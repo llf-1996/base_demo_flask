@@ -162,6 +162,8 @@ if __name__ == '__main__':
     db.session.delete(user)
     db.session.commit()
 
+    db.session.remove()  # 关闭数据库连接
+
 
 
 
